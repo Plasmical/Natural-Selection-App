@@ -2,7 +2,7 @@ package natural.selection.main.animalia;
 
 public abstract class Animal {
 
-	int speed, size, aggressionAmt, genWeeks, stealth, vision;
+	int speed, size, aggressionAmt, genWeeks, stealth, vision, hunger;
 	
 	public Animal(int speed, int size, int aggressionAmt, int generationWeeks, int stealth, int vision) {
 		this.speed = speed;
@@ -63,5 +63,13 @@ public abstract class Animal {
 
 	public void setVision(int vision) {
 		this.vision = vision;
+	}
+
+	public int getHunger() {
+		return hunger;
+	}
+
+	public void setHunger(int hunger) {
+		this.hunger = hunger;
 	}
 }

@@ -5,6 +5,7 @@ import java.util.Random;
 public class OurAnimal extends Animal {
 
 	int speed, size, aggresssionAmt, genWeeks, stealth, vision;
+	int hunger = 100;
 	
 	private static final Random random = new Random();
 	
@@ -111,5 +112,13 @@ public class OurAnimal extends Animal {
 
 	public void setVision(int vision) {
 		this.vision = vision;
+	}
+
+	public int getHunger() {
+		return hunger;
+	}
+
+	public void setHunger(int hunger) {
+		this.hunger = hunger;
 	}
 }

@@ -3,6 +3,7 @@ package natural.selection.main.animalia;
 public class Predator extends Animal {
 
 	private int speed, size, aggroAmt, genWeeks, stealth, vision;
+	int hunger = 100;
 	
 	public Predator(int speed, int size, int aggressionAmt, int generationWeeks, int stealth, int vision) {
 		super(speed, size, aggressionAmt, generationWeeks, stealth, vision);
@@ -82,5 +83,13 @@ public class Predator extends Animal {
 
 	public void setVision(int vision) {
 		this.vision = vision;
+	}
+
+	public int getHunger() {
+		return hunger;
+	}
+
+	public void setHunger(int hunger) {
+		this.hunger = hunger;
 	}
 }

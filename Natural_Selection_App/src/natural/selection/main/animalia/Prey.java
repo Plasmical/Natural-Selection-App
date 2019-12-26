@@ -6,6 +6,8 @@ public class Prey extends Animal {
 
 	private int speed, size, aggroAmt, genWeeks, stealth, vision;
 	
+	int hunger = 100;
+	
 	private Random random = new Random();
 	
 	public Prey(int speed, int size, int aggressionAmt, int generationWeeks, int stealth, int vision) {
@@ -107,5 +109,13 @@ public class Prey extends Animal {
 
 	public void setRandom(Random random) {
 		this.random = random;
+	}
+
+	public int getHunger() {
+		return hunger;
+	}
+
+	public void setHunger(int hunger) {
+		this.hunger = hunger;
 	}
 }
